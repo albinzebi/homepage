@@ -1,0 +1,15 @@
+.jumplist {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.active {
+    color: red;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
