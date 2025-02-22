@@ -165,15 +165,14 @@
     </div>
 
 
+    <div class="container-fluid text-bg-dark">
+        <footer class="py-5">
 
-    <div id="footer" class="container-fluid text-bg-dark"></div>
-
-
-    <script>
-        fetch('../includes/footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data);
-    </script>
+            <p class="text-center text-light">&copy;
+                <script>document.write(new Date().getFullYear())</script> Albin Zebi, All Rights Reserved
+            </p>
+        </footer>
+    </div>
 
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/scripts.js"></script>
