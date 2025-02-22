@@ -1,10 +1,19 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 .jumplist {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.active, .custom, .custom:hover {
+.active,
+.jumplist:hover,
+.custom,
+.custom:hover {
     color: red;
 }
 
@@ -12,4 +21,18 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.max-height {
+    flex: 1;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.albin_img {
+    border-radius: 150px;
 }
