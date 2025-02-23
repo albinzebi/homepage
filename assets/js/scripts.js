@@ -62,21 +62,21 @@ updateClassesL();
 
 window.addEventListener('resize', updateClassesL);
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var header = document.querySelector('header');
     if (window.scrollY > 0) {
-      header.classList.add('sticky');
+        header.classList.add('sticky');
     } else {
-      header.classList.remove('sticky');
+        header.classList.remove('sticky');
     }
-  });
+});
 
 
-  function updateClassesM() {
+function updateClassesM() {
     const jumplinks = document.querySelectorAll('.p-5');
     if (window.innerWidth <= 767) {
         jumplinks.forEach(link => {
-           
+
             link.classList.add('px-3');
 
         });
@@ -103,3 +103,12 @@ function updateClassesD() {
 updateClassesD();
 
 window.addEventListener('resize', updateClassesD);
+
+
+window.onload = function () {
+    const unwantedHashes = ["#section1", "#section2", "#section3", "#section4", "#section5", "#section6", "#section7", "#section8", "#section9", "#section_a", "#section_b", "#section_c"];
+    if (unwantedHashes.includes(window.location.hash)) {
+        window.location.href = window.location.href.split("#")[0];
+    }
+}
+
