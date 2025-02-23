@@ -4,7 +4,7 @@ body {
     margin: 0;
 }
 
-.jumplist {
+.jumplist, .jumplist:active {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
