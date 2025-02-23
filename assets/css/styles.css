@@ -4,18 +4,23 @@ body {
     margin: 0;
 }
 
-.jumplist, .jumplist:active {
+.jumplist {
     color: white;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .active,
-.jumplist:hover,
 .custom,
 .custom:hover {
     color: red;
 }
+
+/*
+.jumplist:hover {
+    color: red;
+}
+*/
 
 header.sticky {
     position: fixed;
