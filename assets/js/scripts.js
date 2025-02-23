@@ -70,3 +70,36 @@ window.addEventListener('scroll', function() {
       header.classList.remove('sticky');
     }
   });
+
+
+  function updateClassesM() {
+    const jumplinks = document.querySelectorAll('.p-5');
+    if (window.innerWidth <= 767) {
+        jumplinks.forEach(link => {
+           
+            link.classList.add('px-3');
+
+        });
+    }
+}
+
+
+updateClassesM();
+
+window.addEventListener('resize', updateClassesM);
+
+function updateClassesD() {
+    const jumplinks = document.querySelectorAll('.p-5');
+    if (window.innerWidth > 767) {
+        jumplinks.forEach(link => {
+
+            link.classList.remove('px-3');
+
+        });
+    }
+}
+
+
+updateClassesD();
+
+window.addEventListener('resize', updateClassesD);
