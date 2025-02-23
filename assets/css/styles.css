@@ -11,16 +11,12 @@ body {
 }
 
 .active,
+.jumplist:hover,
 .custom,
 .custom:hover {
     color: red;
 }
 
-
-
-.jumplist:hover {
-    color: white;
-}
 
 header.sticky {
     position: fixed;
