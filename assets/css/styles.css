@@ -18,10 +18,12 @@ body {
 }
 
 header {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
+
 
 .max-height {
     flex: 1;
